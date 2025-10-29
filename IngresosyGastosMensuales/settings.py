@@ -12,7 +12,7 @@ SECRET_KEY = 'django-insecure-o^np%ds0th5kjt*ad0@$m*8hcjp-5givfeg^24k7j=z&&kx&5+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['disciplined-smile-production.up.railway.app']
 
 
 # Application definition
@@ -110,7 +110,7 @@ CORS_ALLOWED_ORIGINS = [
 
 LANGUAGE_CODE = 'es-ar'
 
-TIME_ZONE = 'America/Buenos_Aires'
+TIME_ZONE = 'America/Argentina/Buenos_Aires'
 
 USE_I18N = True
 
