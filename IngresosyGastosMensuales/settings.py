@@ -12,10 +12,15 @@ SECRET_KEY = 'django-insecure-o^np%ds0th5kjt*ad0@$m*8hcjp-5givfeg^24k7j=z&&kx&5+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['disciplined-smile-production.up.railway.app']
+ALLOWED_HOSTS = ["disciplined-smile-production.up.railway.app"]
 
-
-# Application definition
+CSRF_TRUSTED_ORIGINS = [
+    "https://disciplined-smile-production.up.railway.app",
+]
+# Recomendado detrás del proxy HTTPS de Railway
+SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
 
 INSTALLED_APPS = [
     'django.contrib.admin',
