@@ -1,1 +1,1 @@
-web: gunicorn IngresosyGastosMensuales.wsgi
+web: python manage.py collectstatic && gunicorn IngresosyGastosMensuales.wsgi
