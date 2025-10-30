@@ -128,7 +128,13 @@ USE_I18N = True
 
 USE_TZ = True
 
-
+CORS_ALLOWED_ORIGINS = [
+    "https://frontend-expensas-18mdhfana-santiagopedraza02s-projects.vercel.app",
+]
+# permite también todos los previews de vercel (útil en deploys de preview)
+CORS_ALLOWED_ORIGIN_REGEXES = [
+    r"^https://.*\.vercel\.app$",
+]
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
