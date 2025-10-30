@@ -21,6 +21,7 @@ ALLOWED_HOSTS = ["disciplined-smile-production.up.railway.app"]
 
 CSRF_TRUSTED_ORIGINS = [
     "https://disciplined-smile-production.up.railway.app",
+    "https://frontend-expensas-9fv03emyz-santiagopedraza02s-projects.vercel.app",
 ]
 # Recomendado detrás del proxy HTTPS de Railway
 SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
@@ -112,7 +113,8 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
-    "http://localhost:5173",  # Puerto de Vite
+    "http://localhost:5173", 
+    "https://frontend-expensas-9fv03emyz-santiagopedraza02s-projects.vercel.app",
 ]
 
 # Internationalization
